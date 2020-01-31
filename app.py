@@ -5,4 +5,4 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
-    newsapi =NewsApiClient(api_key='bbb081415b6b417eb5d3fbfe57199cf8')
+    newsapi =NewsApiClient(api_key='NEWS_API_CLIENT')
