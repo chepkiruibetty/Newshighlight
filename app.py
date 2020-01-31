@@ -12,3 +12,7 @@ articles = topheadlines['articles']
 description[]
 news[]
 image[]
+
+for i in range(len(articles)):
+    myarticles = [articles[i]]
+    
