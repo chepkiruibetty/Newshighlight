@@ -15,4 +15,6 @@ image[]
 
 for i in range(len(articles)):
     myarticles = [articles[i]]
-    
+    news.append(myarticles['title'])
+    decription.append(myarticles['description'])
+    image.append(myarticles)['urlToImage']
