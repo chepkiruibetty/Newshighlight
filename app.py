@@ -8,4 +8,7 @@ def index():
     newsapi =NewsApiClient(api_key='NEWS_API_CLIENT')
     topheadlines  = newsapi.get_top_headlines(source="BBC news")
 articles = topheadlines['articles']
-desc =
+
+description[]
+news[]
+image[]
