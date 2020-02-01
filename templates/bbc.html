@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="../static/main.css">
 </head>
 <body>
-<div class="jumbotron" style="color:black">
-<h1 style="color:black">
-World News
-</h1>
-</div>
+<!-- Navbar block  -->
+{% block navbar %}
+{% include 'navbar.html' %}
+{% endblock %}
 <div class="container">
             {%for new,des,i in context %}
     <div class="card m-3 p-3 shadow">
         <img src="{{i}}" class="img-fluid myimages">
         <h3>News:</h3> {{new}}
         <h4>Description:</h4> {{des}}
+        <div class="text-center">
+                <a href="{{url}}" type="button" class="btn btn-outline-primary" target="_blank">Read More</a>
+        </div>
     </div>
     {% endfor %}
 </div>

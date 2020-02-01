@@ -15,11 +15,14 @@
     {% endblock %}
 <div class="container">
     <!-- <div class="d-flex"> -->
-            {%for new,des,i in context %}
+            {%for new,des,i,url in context %}
     <div class="card m-3 p-3 shadow">
         <img src="{{i}}" class="img-fluid myimages">
         <h3>News:</h3> {{new}}
         <h4>Description:</h4> {{des}}
+        <div class="text-center">
+                <a href="{{url}}" type="button" class="btn btn-outline-primary" target="_blank">Read More</a>
+        </div>
     </div>
     {% endfor %}
     <!-- </div> -->
