@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WORLD NEWS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <!-- Navbar block  -->
+    {% block navbar %}
+    {% include 'navbar.html' %}
+    {% endblock %}
+<div class="container">
+    <!-- <div class="d-flex">  -->
+            {%for new,des,i,url,publAt in context %}
+    <div class="card m-3 p-3 shadow">
+        <img src="{{i}}" class="img-fluid myimages">
+        <h3>News:</h3> {{new}}
+        <h4>Description:</h4> {{des}}
+        <h4>Published At:</h4>{{publAt}}
+        <div class="text-center">
+                <a href="{{url}}" type="button" class="btn btn-outline-primary" target="_blank">See More</a>
+        </div>
+    </div> 
+    {% endfor %}
+    <!-- </div>  -->
+</div>
+</body>
+</html>

@@ -82,6 +82,32 @@ def fox():
 
 
     return render_template('fox.html', context = mylist)
+@app.route('/nbc')
+def nbc():
+    newsapi = NewsApiClient(api_key="bbb081415b6b417eb5d3fbfe57199cf8")
+    topheadlines = newsapi.get_top_headlines(sources="nbc-news")
+
+    articles = topheadlines['articles']
+
+    desc = []
+    news = []
+    img = []
+    url = []
+    publAt = []
+
+    for i in range(len(articles)):
+        myarticles = articles[i]
+
+        news.append(myarticles['title'])
+        desc.append(myarticles['description'])
+        img.append(myarticles['urlToImage'])
+        url.append(myarticles['url'])
+        publAt.append(myarticles['publishedAt'])
+
+    mylist = zip(news, desc, img,url,publAt)
+
+
+    return render_template('nbc.html', context = mylist)
     
 if __name__ == "__main__":
     app.run(debug=True)
