@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="../static/main.css">
 </head>
 <body>
-<div class="jumbotron" style="color:black">
-<h1 style="color:black">
-World News
-</h1>
-</div>
+    <!-- Navbar block  -->
+    {% block navbar %}
+    {% include 'navbar.html' %}
+    {% endblock %}
 <div class="container">
     <!-- <div class="d-flex"> -->
             {%for new,des,i in context %}
