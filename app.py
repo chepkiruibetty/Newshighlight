@@ -14,6 +14,7 @@ def Index():
     news = []
     img = []
     url = []
+    publAt = []
 
     for i in range(len(articles)):
         myarticles = articles[i]
@@ -22,10 +23,11 @@ def Index():
         desc.append(myarticles['description'])
         img.append(myarticles['urlToImage'])
         url.append(myarticles['url'])
+        publAt.append(myarticles['publishedAt'])
         
 
 
-    mylist = zip(news, desc, img,url)
+    mylist = zip(news, desc, img,url,publAt)
 
     return render_template('index.html', context = mylist)
 @app.route('/bbc')
