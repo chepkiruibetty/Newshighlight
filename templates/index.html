@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>WORLD NEWS</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/main.css">
 </head>
 <body>
 <div class="jumbotron" style="color:black">
@@ -14,12 +15,15 @@ World News
 </h1>
 </div>
 <div class="container">
-    {%for new,des,i in content %}
-    <img src="{{i}}">
-    <h3>News:</h3> {{new}}
-    <h4>Description:</h4> {{des}}
-    
+    <div class="d-flex">
+            {%for new,des,i in context %}
+    <div class="card m-3 p-3 shadow">
+        <img src="{{i}}" class="img-fluid myimages">
+        <h3>News:</h3> {{new}}
+        <h4>Description:</h4> {{des}}
+    </div>
     {% endfor %}
+    </div>
 </div>
 </body>
 </html>
