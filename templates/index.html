@@ -20,9 +20,9 @@
         <img src="{{i}}" class="img-fluid myimages">
         <h3>News:</h3> {{new}}
         <h4>Description:</h4> {{des}}
-        <h4>Published At:</h4>"{{publAt}}"
+        <h4>Published At:</h4>{{publAt | date}}
         <div class="text-center">
-                <a href="{{url}}" type="button" class="btn btn-outline-primary" target="_blank">Read More</a>
+                <a href="{{url}}" type="button" class="btn btn-outline-primary" target="_blank">See More</a>
         </div>
     </div> 
     {% endfor %}

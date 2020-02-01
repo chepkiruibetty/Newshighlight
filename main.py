@@ -15,7 +15,6 @@ def Index():
     img = []
     url = []
     publAt = []
-    coutry = []
 
     for i in range(len(articles)):
         myarticles = articles[i]
@@ -26,7 +25,6 @@ def Index():
         url.append(myarticles['url'])
         publAt.append(myarticles['publishedAt'])
         
-
 
     mylist = zip(news, desc, img,url,publAt)
 
@@ -41,6 +39,8 @@ def bbc():
     desc = []
     news = []
     img = []
+    url = []
+    publAt = []
 
     for i in range(len(articles)):
         myarticles = articles[i]
@@ -48,8 +48,11 @@ def bbc():
         news.append(myarticles['title'])
         desc.append(myarticles['description'])
         img.append(myarticles['urlToImage'])
+        url.append(myarticles['url'])
+        publAt.append(myarticles['publishedAt'])
 
-    mylist = zip(news, desc, img)
+    mylist = zip(news, desc, img,url,publAt)
+
 
     return render_template('bbc.html', context = mylist)
     
