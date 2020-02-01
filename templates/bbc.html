@@ -15,7 +15,6 @@ World News
 </h1>
 </div>
 <div class="container">
-    <div class="d-flex flex-wrap">
             {%for new,des,i in context %}
     <div class="card m-3 p-3 shadow">
         <img src="{{i}}" class="img-fluid myimages">
@@ -23,7 +22,6 @@ World News
         <h4>Description:</h4> {{des}}
     </div>
     {% endfor %}
-    </div>
 </div>
 </body>
 </html>

@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def Index():
     newsapi = NewsApiClient(api_key="bbb081415b6b417eb5d3fbfe57199cf8")
-    topheadlines = newsapi.get_top_headlines(sources="ary-news")
+    topheadlines = newsapi.get_top_headlines(sources="")
 
     articles = topheadlines['articles']
 
@@ -20,6 +20,7 @@ def Index():
         news.append(myarticles['title'])
         desc.append(myarticles['description'])
         img.append(myarticles['urlToImage'])
+
 
     mylist = zip(news, desc, img)
 
