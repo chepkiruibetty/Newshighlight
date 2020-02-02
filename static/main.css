@@ -1,6 +1,8 @@
 .myimages{
     width: 400px
 }
-.mytop{
-background-color: tomato !important;
+.navbar {
+    font-size: 25px !important;
+    background-color: goldenrod !important;
+    z-index: 100;
 }
