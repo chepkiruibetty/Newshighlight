@@ -1,8 +1,13 @@
 .myimages{
     width: 400px
 }
-.navbar {
+.mytop {
     font-size: 25px !important;
-    background-color: goldenrod !important;
+    background-color: tomato !important;
     z-index: 100;
+    margin-bottom: 5px;
+    text-align: center;
+}
+footer{
+    background-color:tomato; 
 }
