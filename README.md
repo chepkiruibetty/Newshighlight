@@ -10,6 +10,8 @@ This is an application that enables users to see all news sources,their articles
 
 ## live link to application
 
+https://whispering-wildwood-66420.herokuapp.com/
+
 ## Setup/Installation requirements
 1.Clone or download and unzip the repository from github https://github.com/chepkiruibetty/Newshighlight
 
