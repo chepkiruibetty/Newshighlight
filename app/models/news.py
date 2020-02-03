@@ -26,4 +26,3 @@ class Articles:
         self.urlToImage = urlToImage
         self.publishedAt = publishedAt
         self.content = content
-©
