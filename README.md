@@ -41,6 +41,11 @@ chepkiruibetty64@gmail.com
 * css3
 * git (for version control)
 
+### codebeat
+
+[![codebeat badge](https://codebeat.co/badges/0ca33b78-1cd7-49e6-a36e-e8076b9a8d53)](https://codebeat.co/projects/github-com-chepkiruibetty-newshighlight-betty-news)
+
+
 ### License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
