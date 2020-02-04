@@ -31,9 +31,6 @@ https://whispering-wildwood-66420.herokuapp.com/
 ## Support and contact details
 chepkiruibetty64@gmail.com
 
-### Code beat
-
-- [![codebeat badge](https://codebeat.co/badges/a4834ad7-9168-4fcd-87ee-6305c883b8b8)]
 
 ### Technologies Used
 * Python
